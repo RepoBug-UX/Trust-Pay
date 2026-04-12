@@ -1,0 +1,23 @@
+{
+  "name": "trustpay",
+  "version": "0.1.0",
+  "description": "TrustPay — Merchant payment platform on TRON with on-chain trust scoring and BNPL",
+  "scripts": {
+    "compile": "tronbox compile",
+    "test": "tronbox test",
+    "migrate:dev": "tronbox migrate --network development",
+    "migrate:nile": "tronbox migrate --network nile",
+    "seed:nile": "tronbox exec scripts/seed-demo.js --network nile",
+    "extract-abis": "node scripts/extract-abis.js"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.0",
+    "tronweb": "^6.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "tronbox": "^4.4.0"
+  },
+  "license": "MIT"
+}
